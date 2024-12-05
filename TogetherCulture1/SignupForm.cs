@@ -109,7 +109,7 @@ namespace TogetherCulture1
                 {
                     connect.Open();
                     String checkEmail = "SELECT * FROM admin WHERE email = @Email";
-                    //UserData is the name of table created
+                    //admin is the name of table created
 
                     using (SqlCommand checkUser = new SqlCommand(checkEmail, connect))
 
@@ -166,7 +166,8 @@ namespace TogetherCulture1
                     connect.Close();
                 }
             }
-                    }
+                    
+        }
 
 
 

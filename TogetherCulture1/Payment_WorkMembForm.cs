@@ -75,8 +75,8 @@ namespace TogetherCulture1
 
             MessageBox.Show("Payment Successful", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            WorkMembBenefitsForm wbform = new WorkMembBenefitsForm();
-            wbform.Show();
+            memb1PersonalForm mpForm = new memb1PersonalForm();
+            mpForm.Show();
             this.Close();
         }
     }

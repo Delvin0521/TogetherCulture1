@@ -43,5 +43,12 @@ namespace TogetherCulture1
             mform.Show();
             this.Hide();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            memb1PersonalForm m1form = new memb1PersonalForm();
+            m1form.Show();
+            this.Hide();
+        }
     }
 }

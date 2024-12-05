@@ -8,3 +8,19 @@ profile_created DATE NULL
 )
 
 SELECT * FROM admin
+
+CREATE TABLE members
+
+(
+id INT PRIMARY KEY IDENTITY(1,1),
+first_name VARCHAR(MAX) NULL,
+surname VARCHAR(MAX) NULL,
+email VARCHAR(MAX) NULL,
+phone VARCHAR(MAX) NULL,
+city VARCHAR(MAX) NULL,
+country VARCHAR(MAX) NULL,
+gender VARCHAR(MAX) NULL,
+
+)
+
+SELECT * FROM members

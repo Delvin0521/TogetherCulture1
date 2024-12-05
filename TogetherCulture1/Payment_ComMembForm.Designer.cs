@@ -359,6 +359,7 @@
             this.cardName1.Name = "cardName1";
             this.cardName1.Size = new System.Drawing.Size(316, 22);
             this.cardName1.TabIndex = 1;
+            this.cardName1.TextChanged += new System.EventHandler(this.cardName1_TextChanged);
             // 
             // panel3
             // 

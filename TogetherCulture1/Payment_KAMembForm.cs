@@ -80,8 +80,9 @@ namespace TogetherCulture1
 
             MessageBox.Show("Payment Successful", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            KA_MembBenefitsForm kform = new KA_MembBenefitsForm();
-            kform.Show();
+
+            memb1PersonalForm mpForm = new memb1PersonalForm();
+            mpForm.Show();
             this.Close();
         }
     }

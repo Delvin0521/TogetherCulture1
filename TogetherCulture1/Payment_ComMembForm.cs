@@ -80,9 +80,14 @@ namespace TogetherCulture1
 
             MessageBox.Show("Payment Successful", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            ComMembBenefitsForm cbForm = new ComMembBenefitsForm();
-            cbForm.Show(); 
+            memb1PersonalForm mpForm = new memb1PersonalForm();
+            mpForm.Show(); 
             this.Close();
+
+        }
+
+        private void cardName1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
