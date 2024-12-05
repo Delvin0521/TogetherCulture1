@@ -1,9 +1,0 @@
-﻿CREATE TABLE data
-(
-id INT PRIMARY KEY IDENTITY(1,1),
-email VARCHAR(MAX) NULL,
-passwrd VARCHAR(MAX) NULL,
-profile_created DATE NULL
-
-)
-SELECT * FROM data
