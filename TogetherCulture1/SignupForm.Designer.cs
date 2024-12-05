@@ -92,7 +92,6 @@
             this.confirm_passField.PasswordChar = '*';
             this.confirm_passField.Size = new System.Drawing.Size(419, 22);
             this.confirm_passField.TabIndex = 13;
-            this.confirm_passField.UseSystemPasswordChar = true;
             this.confirm_passField.TextChanged += new System.EventHandler(this.confirm_passField_TextChanged);
             // 
             // confirmPassField
@@ -178,7 +177,6 @@
             this.create_passField.PasswordChar = '*';
             this.create_passField.Size = new System.Drawing.Size(419, 22);
             this.create_passField.TabIndex = 6;
-            this.create_passField.UseSystemPasswordChar = true;
             this.create_passField.TextChanged += new System.EventHandler(this.create_passField_TextChanged);
             // 
             // createPassField
