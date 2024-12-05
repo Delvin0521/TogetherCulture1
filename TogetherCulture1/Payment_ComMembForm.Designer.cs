@@ -51,14 +51,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cvv1 = new System.Windows.Forms.TextBox();
+            this.mm1 = new System.Windows.Forms.TextBox();
+            this.cardNumb1 = new System.Windows.Forms.TextBox();
+            this.cardName1 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Payment1_closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.yy1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -82,6 +82,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.Controls.Add(this.yy1);
             this.panel2.Controls.Add(this.PaymentButton1);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label11);
@@ -97,11 +98,10 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.cvv1);
+            this.panel2.Controls.Add(this.mm1);
+            this.panel2.Controls.Add(this.cardNumb1);
+            this.panel2.Controls.Add(this.cardName1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(338, 57);
             this.panel2.Name = "panel2";
@@ -122,6 +122,7 @@
             this.PaymentButton1.TabIndex = 20;
             this.PaymentButton1.Text = "Pay";
             this.PaymentButton1.UseVisualStyleBackColor = false;
+            this.PaymentButton1.Click += new System.EventHandler(this.PaymentButton1_Click);
             // 
             // panel4
             // 
@@ -272,7 +273,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(156, 69);
+            this.label3.Location = new System.Drawing.Point(165, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(12, 16);
             this.label3.TabIndex = 11;
@@ -329,41 +330,35 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Card Holder Name";
             // 
-            // textBox5
+            // cvv1
             // 
-            this.textBox5.Location = new System.Drawing.Point(269, 292);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(70, 22);
-            this.textBox5.TabIndex = 5;
+            this.cvv1.Location = new System.Drawing.Point(269, 292);
+            this.cvv1.Name = "cvv1";
+            this.cvv1.Size = new System.Drawing.Size(70, 22);
+            this.cvv1.TabIndex = 5;
+            this.cvv1.UseSystemPasswordChar = true;
             // 
-            // textBox4
+            // mm1
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(35, 22);
-            this.textBox4.TabIndex = 4;
+            this.mm1.Location = new System.Drawing.Point(35, 289);
+            this.mm1.Name = "mm1";
+            this.mm1.Size = new System.Drawing.Size(35, 22);
+            this.mm1.TabIndex = 3;
             // 
-            // textBox3
+            // cardNumb1
             // 
-            this.textBox3.Location = new System.Drawing.Point(35, 286);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(35, 22);
-            this.textBox3.TabIndex = 3;
+            this.cardNumb1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cardNumb1.Location = new System.Drawing.Point(23, 177);
+            this.cardNumb1.Name = "cardNumb1";
+            this.cardNumb1.Size = new System.Drawing.Size(316, 22);
+            this.cardNumb1.TabIndex = 2;
             // 
-            // textBox2
+            // cardName1
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox2.Location = new System.Drawing.Point(23, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 22);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(23, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 22);
-            this.textBox1.TabIndex = 1;
+            this.cardName1.Location = new System.Drawing.Point(23, 102);
+            this.cardName1.Name = "cardName1";
+            this.cardName1.Size = new System.Drawing.Size(316, 22);
+            this.cardName1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -402,6 +397,13 @@
             this.label1.Text = "Payment";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // yy1
+            // 
+            this.yy1.Location = new System.Drawing.Point(103, 289);
+            this.yy1.Name = "yy1";
+            this.yy1.Size = new System.Drawing.Size(35, 22);
+            this.yy1.TabIndex = 21;
+            // 
             // Payment_ComMembForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -432,11 +434,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label Payment1_closeButton;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cvv1;
+        private System.Windows.Forms.TextBox mm1;
+        private System.Windows.Forms.TextBox cardNumb1;
+        private System.Windows.Forms.TextBox cardName1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -458,5 +459,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button PaymentButton1;
+        private System.Windows.Forms.TextBox yy1;
     }
 }

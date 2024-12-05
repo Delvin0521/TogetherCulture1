@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.PaymentButton1 = new System.Windows.Forms.Button();
+            this.PaymentButton3 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -51,11 +51,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cvv3 = new System.Windows.Forms.TextBox();
+            this.yy3 = new System.Windows.Forms.TextBox();
+            this.mm3 = new System.Windows.Forms.TextBox();
+            this.cardNumb3 = new System.Windows.Forms.TextBox();
+            this.cardName3 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.Payment3_closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -82,7 +82,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Controls.Add(this.PaymentButton1);
+            this.panel2.Controls.Add(this.PaymentButton3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
@@ -97,31 +97,32 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.cvv3);
+            this.panel2.Controls.Add(this.yy3);
+            this.panel2.Controls.Add(this.mm3);
+            this.panel2.Controls.Add(this.cardNumb3);
+            this.panel2.Controls.Add(this.cardName3);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(338, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(371, 504);
             this.panel2.TabIndex = 0;
             // 
-            // PaymentButton1
+            // PaymentButton3
             // 
-            this.PaymentButton1.BackColor = System.Drawing.Color.DarkRed;
-            this.PaymentButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PaymentButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PaymentButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PaymentButton1.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaymentButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PaymentButton1.Location = new System.Drawing.Point(129, 447);
-            this.PaymentButton1.Name = "PaymentButton1";
-            this.PaymentButton1.Size = new System.Drawing.Size(107, 38);
-            this.PaymentButton1.TabIndex = 20;
-            this.PaymentButton1.Text = "Pay";
-            this.PaymentButton1.UseVisualStyleBackColor = false;
+            this.PaymentButton3.BackColor = System.Drawing.Color.DarkRed;
+            this.PaymentButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PaymentButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PaymentButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PaymentButton3.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PaymentButton3.Location = new System.Drawing.Point(129, 447);
+            this.PaymentButton3.Name = "PaymentButton3";
+            this.PaymentButton3.Size = new System.Drawing.Size(107, 38);
+            this.PaymentButton3.TabIndex = 20;
+            this.PaymentButton3.Text = "Pay";
+            this.PaymentButton3.UseVisualStyleBackColor = false;
+            this.PaymentButton3.Click += new System.EventHandler(this.PaymentButton3_Click);
             // 
             // panel4
             // 
@@ -272,7 +273,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(156, 69);
+            this.label3.Location = new System.Drawing.Point(165, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(12, 16);
             this.label3.TabIndex = 11;
@@ -329,41 +330,41 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Card Holder Name";
             // 
-            // textBox5
+            // cvv3
             // 
-            this.textBox5.Location = new System.Drawing.Point(269, 292);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(70, 22);
-            this.textBox5.TabIndex = 5;
+            this.cvv3.Location = new System.Drawing.Point(269, 292);
+            this.cvv3.Name = "cvv3";
+            this.cvv3.Size = new System.Drawing.Size(70, 22);
+            this.cvv3.TabIndex = 5;
             // 
-            // textBox4
+            // yy3
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 286);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(35, 22);
-            this.textBox4.TabIndex = 4;
+            this.yy3.Location = new System.Drawing.Point(103, 286);
+            this.yy3.Name = "yy3";
+            this.yy3.Size = new System.Drawing.Size(35, 22);
+            this.yy3.TabIndex = 4;
             // 
-            // textBox3
+            // mm3
             // 
-            this.textBox3.Location = new System.Drawing.Point(35, 286);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(35, 22);
-            this.textBox3.TabIndex = 3;
+            this.mm3.Location = new System.Drawing.Point(35, 286);
+            this.mm3.Name = "mm3";
+            this.mm3.Size = new System.Drawing.Size(35, 22);
+            this.mm3.TabIndex = 3;
             // 
-            // textBox2
+            // cardNumb3
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox2.Location = new System.Drawing.Point(23, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 22);
-            this.textBox2.TabIndex = 2;
+            this.cardNumb3.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cardNumb3.Location = new System.Drawing.Point(23, 177);
+            this.cardNumb3.Name = "cardNumb3";
+            this.cardNumb3.Size = new System.Drawing.Size(316, 22);
+            this.cardNumb3.TabIndex = 2;
             // 
-            // textBox1
+            // cardName3
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 22);
-            this.textBox1.TabIndex = 1;
+            this.cardName3.Location = new System.Drawing.Point(23, 102);
+            this.cardName3.Name = "cardName3";
+            this.cardName3.Size = new System.Drawing.Size(316, 22);
+            this.cardName3.TabIndex = 1;
             // 
             // panel3
             // 
@@ -428,7 +429,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button PaymentButton1;
+        private System.Windows.Forms.Button PaymentButton3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -449,11 +450,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox cvv3;
+        private System.Windows.Forms.TextBox yy3;
+        private System.Windows.Forms.TextBox mm3;
+        private System.Windows.Forms.TextBox cardNumb3;
+        private System.Windows.Forms.TextBox cardName3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label Payment3_closeButton;
         private System.Windows.Forms.Label label1;
