@@ -101,7 +101,7 @@ namespace TogetherCulture1
                     {
                         connect.Open();
 
-                        String selectDate = "SELECT * FROM admin WHERE email = @Email AND passwrd = @pass";
+                        String selectDate = "SELECT * FROM users WHERE email = @Email AND passwrd = @pass";
                     using (SqlCommand cmd = new SqlCommand(selectDate, connect))
                         {
 
