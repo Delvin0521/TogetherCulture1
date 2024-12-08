@@ -50,5 +50,12 @@ namespace TogetherCulture1
             m1form.Show();
             this.Hide();
         }
+
+        private void gotoDashHomePage_Click(object sender, EventArgs e)
+        {
+            DashboardForm dhform = new DashboardForm();
+            dhform.Show();
+            this.Hide();
+        }
     }
 }

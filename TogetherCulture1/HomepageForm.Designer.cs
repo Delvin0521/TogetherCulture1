@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.gotoDashHomePage = new System.Windows.Forms.Label();
             this.gotoMembHomepage = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +48,17 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(303, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Membership form";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // gotoDashHomePage
             // 
             this.gotoDashHomePage.AutoSize = true;
@@ -56,6 +67,7 @@
             this.gotoDashHomePage.Size = new System.Drawing.Size(75, 16);
             this.gotoDashHomePage.TabIndex = 2;
             this.gotoDashHomePage.Text = "Dashboard";
+            this.gotoDashHomePage.Click += new System.EventHandler(this.gotoDashHomePage_Click);
             this.gotoDashHomePage.MouseEnter += new System.EventHandler(this.gotoDashHomePage_MouseEnter);
             this.gotoDashHomePage.MouseLeave += new System.EventHandler(this.gotoDashHomePage_MouseLeave);
             // 
@@ -80,17 +92,6 @@
             this.label1.Size = new System.Drawing.Size(159, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Comming soon...";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(303, 305);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 16);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Membership form";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // HomepageForm
             // 

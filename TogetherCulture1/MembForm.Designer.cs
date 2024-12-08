@@ -31,6 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MembForm));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.logoutMembPageButton = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.GotoDash_membPage = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.GotoEvents_membPage = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.gotoHome_membPage = new System.Windows.Forms.Label();
             this.memb2_GotoButton = new System.Windows.Forms.Button();
             this.memb3_GotoButton = new System.Windows.Forms.Button();
             this.memb1_GotoButton = new System.Windows.Forms.Button();
@@ -48,30 +59,19 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.logoutMembPageButton = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.GotoDash_membPage = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.GotoEvents_membPage = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.gotoHome_membPage = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.membpage_closeButton = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.membpage_closeButton = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +80,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BackgroundImage = global::TogetherCulture1.Properties.Resources._1754627;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.memb2_GotoButton);
             this.panel1.Controls.Add(this.memb3_GotoButton);
             this.panel1.Controls.Add(this.memb1_GotoButton);
@@ -94,13 +95,138 @@
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1019, 613);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel3.Controls.Add(this.logoutMembPageButton);
+            this.panel3.Controls.Add(this.flowLayoutPanel1);
+            this.panel3.Controls.Add(this.panel7);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 38);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(147, 575);
+            this.panel3.TabIndex = 14;
+            // 
+            // logoutMembPageButton
+            // 
+            this.logoutMembPageButton.BackColor = System.Drawing.SystemColors.ControlText;
+            this.logoutMembPageButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoutMembPageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.logoutMembPageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutMembPageButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutMembPageButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logoutMembPageButton.Location = new System.Drawing.Point(12, 485);
+            this.logoutMembPageButton.Name = "logoutMembPageButton";
+            this.logoutMembPageButton.Size = new System.Drawing.Size(95, 37);
+            this.logoutMembPageButton.TabIndex = 12;
+            this.logoutMembPageButton.Text = "Logout";
+            this.logoutMembPageButton.UseVisualStyleBackColor = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 306);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
+            this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.GotoDash_membPage);
+            this.panel7.Location = new System.Drawing.Point(0, 141);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(147, 41);
+            this.panel7.TabIndex = 3;
+            // 
+            // GotoDash_membPage
+            // 
+            this.GotoDash_membPage.AutoSize = true;
+            this.GotoDash_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GotoDash_membPage.Location = new System.Drawing.Point(26, 10);
+            this.GotoDash_membPage.Name = "GotoDash_membPage";
+            this.GotoDash_membPage.Size = new System.Drawing.Size(85, 21);
+            this.GotoDash_membPage.TabIndex = 3;
+            this.GotoDash_membPage.Text = "Dashboard";
+            this.GotoDash_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GotoDash_membPage.Click += new System.EventHandler(this.GotoDash_membPage_Click);
+            this.GotoDash_membPage.MouseEnter += new System.EventHandler(this.GotoDash_membPage_MouseEnter_1);
+            this.GotoDash_membPage.MouseLeave += new System.EventHandler(this.GotoDash_membPage_MouseLeave_1);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.GotoEvents_membPage);
+            this.panel6.Location = new System.Drawing.Point(0, 94);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(147, 41);
+            this.panel6.TabIndex = 3;
+            // 
+            // GotoEvents_membPage
+            // 
+            this.GotoEvents_membPage.AutoSize = true;
+            this.GotoEvents_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GotoEvents_membPage.Location = new System.Drawing.Point(39, 10);
+            this.GotoEvents_membPage.Name = "GotoEvents_membPage";
+            this.GotoEvents_membPage.Size = new System.Drawing.Size(56, 21);
+            this.GotoEvents_membPage.TabIndex = 3;
+            this.GotoEvents_membPage.Text = "Events";
+            this.GotoEvents_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GotoEvents_membPage.Click += new System.EventHandler(this.GotoEvents_membPage_Click_1);
+            this.GotoEvents_membPage.MouseEnter += new System.EventHandler(this.GotoEvents_membPage_MouseEnter_1);
+            this.GotoEvents_membPage.MouseLeave += new System.EventHandler(this.GotoEvents_membPage_MouseLeave_1);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(43)))), ((int)(((byte)(62)))));
+            this.panel5.Controls.Add(this.label2);
+            this.panel5.Location = new System.Drawing.Point(0, 47);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(147, 41);
+            this.panel5.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label2.Location = new System.Drawing.Point(12, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 21);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Membership";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.gotoHome_membPage);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(147, 41);
+            this.panel4.TabIndex = 2;
+            // 
+            // gotoHome_membPage
+            // 
+            this.gotoHome_membPage.AutoSize = true;
+            this.gotoHome_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gotoHome_membPage.Location = new System.Drawing.Point(45, 10);
+            this.gotoHome_membPage.Name = "gotoHome_membPage";
+            this.gotoHome_membPage.Size = new System.Drawing.Size(52, 21);
+            this.gotoHome_membPage.TabIndex = 4;
+            this.gotoHome_membPage.Text = "Home";
+            this.gotoHome_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gotoHome_membPage.Click += new System.EventHandler(this.gotoHome_membPage_Click_1);
+            this.gotoHome_membPage.MouseEnter += new System.EventHandler(this.gotoHome_membPage_MouseEnter_1);
+            this.gotoHome_membPage.MouseLeave += new System.EventHandler(this.gotoHome_membPage_MouseLeave_1);
             // 
             // memb2_GotoButton
             // 
@@ -312,130 +438,6 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Membership Types";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.RosyBrown;
-            this.panel3.Controls.Add(this.logoutMembPageButton);
-            this.panel3.Controls.Add(this.flowLayoutPanel1);
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 38);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(147, 575);
-            this.panel3.TabIndex = 1;
-            // 
-            // logoutMembPageButton
-            // 
-            this.logoutMembPageButton.BackColor = System.Drawing.SystemColors.ControlText;
-            this.logoutMembPageButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.logoutMembPageButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.logoutMembPageButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutMembPageButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutMembPageButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logoutMembPageButton.Location = new System.Drawing.Point(12, 485);
-            this.logoutMembPageButton.Name = "logoutMembPageButton";
-            this.logoutMembPageButton.Size = new System.Drawing.Size(95, 37);
-            this.logoutMembPageButton.TabIndex = 12;
-            this.logoutMembPageButton.Text = "Logout";
-            this.logoutMembPageButton.UseVisualStyleBackColor = false;
-            this.logoutMembPageButton.Click += new System.EventHandler(this.logoutMembPageButton_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 306);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(8, 8);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.GotoDash_membPage);
-            this.panel7.Location = new System.Drawing.Point(0, 141);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(147, 41);
-            this.panel7.TabIndex = 3;
-            // 
-            // GotoDash_membPage
-            // 
-            this.GotoDash_membPage.AutoSize = true;
-            this.GotoDash_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoDash_membPage.Location = new System.Drawing.Point(26, 10);
-            this.GotoDash_membPage.Name = "GotoDash_membPage";
-            this.GotoDash_membPage.Size = new System.Drawing.Size(85, 21);
-            this.GotoDash_membPage.TabIndex = 3;
-            this.GotoDash_membPage.Text = "Dashboard";
-            this.GotoDash_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.GotoDash_membPage.MouseEnter += new System.EventHandler(this.GotoDash_membPage_MouseEnter);
-            this.GotoDash_membPage.MouseLeave += new System.EventHandler(this.GotoDash_membPage_MouseLeave);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.GotoEvents_membPage);
-            this.panel6.Location = new System.Drawing.Point(0, 94);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(147, 41);
-            this.panel6.TabIndex = 3;
-            // 
-            // GotoEvents_membPage
-            // 
-            this.GotoEvents_membPage.AutoSize = true;
-            this.GotoEvents_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GotoEvents_membPage.Location = new System.Drawing.Point(39, 10);
-            this.GotoEvents_membPage.Name = "GotoEvents_membPage";
-            this.GotoEvents_membPage.Size = new System.Drawing.Size(56, 21);
-            this.GotoEvents_membPage.TabIndex = 3;
-            this.GotoEvents_membPage.Text = "Events";
-            this.GotoEvents_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.GotoEvents_membPage.Click += new System.EventHandler(this.GotoEvents_membPage_Click);
-            this.GotoEvents_membPage.MouseEnter += new System.EventHandler(this.GotoEvents_membPage_MouseEnter);
-            this.GotoEvents_membPage.MouseLeave += new System.EventHandler(this.GotoEvents_membPage_MouseLeave);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(43)))), ((int)(((byte)(62)))));
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Location = new System.Drawing.Point(0, 47);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(147, 41);
-            this.panel5.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label2.Location = new System.Drawing.Point(12, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 21);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Membership";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.gotoHome_membPage);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(147, 41);
-            this.panel4.TabIndex = 2;
-            // 
-            // gotoHome_membPage
-            // 
-            this.gotoHome_membPage.AutoSize = true;
-            this.gotoHome_membPage.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gotoHome_membPage.Location = new System.Drawing.Point(45, 10);
-            this.gotoHome_membPage.Name = "gotoHome_membPage";
-            this.gotoHome_membPage.Size = new System.Drawing.Size(52, 21);
-            this.gotoHome_membPage.TabIndex = 4;
-            this.gotoHome_membPage.Text = "Home";
-            this.gotoHome_membPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.gotoHome_membPage.Click += new System.EventHandler(this.gotoHome_membPage_Click);
-            this.gotoHome_membPage.MouseEnter += new System.EventHandler(this.gotoHome_membPage_MouseEnter);
-            this.gotoHome_membPage.MouseLeave += new System.EventHandler(this.gotoHome_membPage_MouseLeave);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -449,6 +451,20 @@
             this.panel2.Size = new System.Drawing.Size(1019, 38);
             this.panel2.TabIndex = 0;
             this.panel2.MouseEnter += new System.EventHandler(this.panel2_MouseEnter);
+            // 
+            // membpage_closeButton
+            // 
+            this.membpage_closeButton.AutoSize = true;
+            this.membpage_closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.membpage_closeButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.membpage_closeButton.Location = new System.Drawing.Point(991, 9);
+            this.membpage_closeButton.Name = "membpage_closeButton";
+            this.membpage_closeButton.Size = new System.Drawing.Size(16, 18);
+            this.membpage_closeButton.TabIndex = 12;
+            this.membpage_closeButton.Text = "X";
+            this.membpage_closeButton.Click += new System.EventHandler(this.membpage_closeButton_Click_1);
+            this.membpage_closeButton.MouseEnter += new System.EventHandler(this.membpage_closeButton_MouseEnter);
+            this.membpage_closeButton.MouseLeave += new System.EventHandler(this.membpage_closeButton_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -473,20 +489,6 @@
             this.label1.Text = "TOGETHER CULTURE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // membpage_closeButton
-            // 
-            this.membpage_closeButton.AutoSize = true;
-            this.membpage_closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.membpage_closeButton.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.membpage_closeButton.Location = new System.Drawing.Point(991, 9);
-            this.membpage_closeButton.Name = "membpage_closeButton";
-            this.membpage_closeButton.Size = new System.Drawing.Size(16, 18);
-            this.membpage_closeButton.TabIndex = 12;
-            this.membpage_closeButton.Text = "X";
-            this.membpage_closeButton.Click += new System.EventHandler(this.membpage_closeButton_Click_1);
-            this.membpage_closeButton.MouseEnter += new System.EventHandler(this.membpage_closeButton_MouseEnter);
-            this.membpage_closeButton.MouseLeave += new System.EventHandler(this.membpage_closeButton_MouseLeave);
-            // 
             // MembForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -498,12 +500,6 @@
             this.Text = "MembForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -513,6 +509,12 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -524,17 +526,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label GotoDash_membPage;
-        private System.Windows.Forms.Label GotoEvents_membPage;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel8;
@@ -552,9 +546,17 @@
         private System.Windows.Forms.Button memb1_GotoButton;
         private System.Windows.Forms.Button memb2_GotoButton;
         private System.Windows.Forms.Button memb3_GotoButton;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button logoutMembPageButton;
-        private System.Windows.Forms.Label gotoHome_membPage;
         private System.Windows.Forms.Label membpage_closeButton;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button logoutMembPageButton;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label GotoDash_membPage;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label GotoEvents_membPage;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label gotoHome_membPage;
     }
 }

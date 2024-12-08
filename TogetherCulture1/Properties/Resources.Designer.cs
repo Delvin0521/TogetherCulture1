@@ -163,6 +163,26 @@ namespace TogetherCulture1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap resized_image {
+            get {
+                object obj = ResourceManager.GetObject("resized_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resized_image_399x248 {
+            get {
+                object obj = ResourceManager.GetObject("resized_image_399x248", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap resized_to_528x545 {
             get {
                 object obj = ResourceManager.GetObject("resized_to_528x545", resourceCulture);

@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="3669295_ic_white_filled_play_circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3669295_ic_white_filled_play_circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\R.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2485383_card_credit_electron_pay_payments_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2485383_card_credit_electron_pay_payments_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="211717_circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\211717_circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="107136_tumblr_gray_circle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\107136_tumblr_gray_circle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="406088_card_credit_visa_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\406088_card_credit_visa_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="406086_american_amex_card_credit_express_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\406086_american_amex_card_credit_express_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1322426_card_master_master card_master card new logo_method_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1322426_card_master_master card_master card new logo_method_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resized_to_528x545" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resized_to_528x545.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Box-image-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Box-image-6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resized_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resized_image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resized_to_598x498" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resized_to_598x498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1754627" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1754627.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="resized_image_399x248" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resized_image_399x248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

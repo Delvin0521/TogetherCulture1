@@ -57,7 +57,18 @@ namespace TogetherCulture1
 
         private void memb3page_closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var result = MessageBox.Show("Do you want to Exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+
+                this.Close();
+            }
+            else
+            {
+
+            }
         }
 
         private void GotoHome_memb3Page_MouseEnter(object sender, EventArgs e)
@@ -108,6 +119,21 @@ namespace TogetherCulture1
         private void memb3page_closeButton_MouseLeave(object sender, EventArgs e)
         {
             memb3page_closeButton.ForeColor = Color.Black;
+        }
+
+        Point lastpoint;
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastpoint.X;
+                this.Top += e.Y - lastpoint.Y;
+            }
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastpoint = new Point(e.X, e.Y);
         }
     }
 }

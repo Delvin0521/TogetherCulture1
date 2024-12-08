@@ -75,61 +75,33 @@ namespace TogetherCulture1
             this.Close();
         }
 
-        private void GotoEvents_membPage_Click(object sender, EventArgs e)
-        {
+       
+        
 
-        }
+       
 
-        private void gotoHome_membPage_Click(object sender, EventArgs e)
-        {
-            HomepageForm hpForm = new HomepageForm();
-            hpForm.Show();
-            this.Close();
-        }
-
-        private void gotoHome_membPage_MouseEnter(object sender, EventArgs e)
-        {
-            gotoHome_membPage.ForeColor = Color.Gray;
-        }
-
-        private void gotoHome_membPage_MouseLeave(object sender, EventArgs e)
-        {
-            gotoHome_membPage.ForeColor = Color.Black;
-        }
-
-        private void GotoEvents_membPage_MouseEnter(object sender, EventArgs e)
-        {
-           GotoEvents_membPage.ForeColor = Color.Gray;
-        }
-
-        private void GotoEvents_membPage_MouseLeave(object sender, EventArgs e)
-        {
-           GotoEvents_membPage.ForeColor = Color.Black;
-        }
-
-        private void GotoDash_membPage_MouseEnter(object sender, EventArgs e)
-        {
-            GotoDash_membPage.ForeColor = Color.Gray;
-        }
-
-        private void GotoDash_membPage_MouseLeave(object sender, EventArgs e)
-        {
-            GotoDash_membPage.ForeColor = Color.Black;
-        }
+    
 
         private void panel2_MouseEnter(object sender, EventArgs e)
         {
 
         }
 
-        private void membpage_closeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void membpage_closeButton_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            var result = MessageBox.Show("Do you want to Exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+
+                this.Close();
+            }
+            else
+            {
+
+            }
         }
 
         private void membpage_closeButton_MouseEnter(object sender, EventArgs e)
@@ -140,6 +112,70 @@ namespace TogetherCulture1
         private void membpage_closeButton_MouseLeave(object sender, EventArgs e)
         {
             membpage_closeButton.ForeColor = Color.Black;
+        }
+
+        private void GotoDash_membPage_Click(object sender, EventArgs e)
+        {
+            DashboardForm dform = new DashboardForm();
+            dform.Show();
+            this.Hide();
+        }
+
+        private void GotoEvents_membPage_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GotoDash_membPage_MouseEnter_1(object sender, EventArgs e)
+        {
+            GotoDash_membPage.ForeColor= Color.Gray;
+        }
+
+        private void GotoDash_membPage_MouseLeave_1(object sender, EventArgs e)
+        {
+            GotoDash_membPage.ForeColor = Color.Black;
+        }
+
+        private void GotoEvents_membPage_MouseEnter_1(object sender, EventArgs e)
+        {
+            GotoEvents_membPage.ForeColor = Color.Gray;
+        }
+
+        private void GotoEvents_membPage_MouseLeave_1(object sender, EventArgs e)
+        {
+            GotoEvents_membPage.ForeColor = Color.Black;
+        }
+
+        private void gotoHome_membPage_MouseEnter_1(object sender, EventArgs e)
+        {
+            gotoHome_membPage.ForeColor = Color.Gray;   
+        }
+
+        private void gotoHome_membPage_MouseLeave_1(object sender, EventArgs e)
+        {
+            gotoHome_membPage.ForeColor = Color.Black;
+        }
+
+        private void gotoHome_membPage_Click_1(object sender, EventArgs e)
+        {
+            HomepageForm hpForm = new HomepageForm();
+            hpForm.Show();
+            this.Close();
+        }
+
+        Point lastpoint;
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastpoint.X;
+                this.Top += e.Y - lastpoint.Y;
+            }
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastpoint = new Point(e.X, e.Y);
         }
     }
 }
